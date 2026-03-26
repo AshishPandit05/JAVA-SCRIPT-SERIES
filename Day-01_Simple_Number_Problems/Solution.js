@@ -18,10 +18,16 @@ if (Number.isInteger(num) && num > 0) {
 
 */
 let number = +prompt("Enter a number :");
-if (Number.isInteger(num1) && number > 0) {
+if (Number.isInteger(number) && number > 0) {
   for (let i = 1; i <= number; i++) {
     console.log(number - i + 1);
   }
 } else {
   console.log("ERROR");
+}
+
+// 3. Print All Even Numbers from 1 to N
+let num2 = +prompt("Enter the number : ");
+for (let i = 2; i < num2; i += 2) {
+  console.log(i);
 }
