@@ -31,3 +31,23 @@ let num2 = +prompt("Enter the number : ");
 for (let i = 2; i < num2; i += 2) {
   console.log(i);
 }
+
+// 4. Sum of First N Natural Numbers
+let num3 = +prompt("Enter the number : ");
+let sum = 0;
+for (let i = 0; i <= num3; i++) {
+  sum += i;
+}
+console.log(sum);
+
+// Optimized
+// sum = (x(x + 1))/2
+
+const x = Number(prompt("Enter the number:"));
+
+if (x >= 0) {
+  const sum = (x * (x + 1)) / 2;
+  console.log(sum);
+} else {
+  console.log("ERROR");
+}
