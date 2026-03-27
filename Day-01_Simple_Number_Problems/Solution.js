@@ -59,3 +59,21 @@ for (let i = 1; i <= num4; i++) {
   fact *= i;
 }
 console.log(fact);
+
+// 6. Sum of All Even Numbers up to N
+let num5 = +prompt("Enter the number : ");
+let even = 0;
+for (let i = 0; i <= num5; i += 2) {
+  even += i;
+}
+console.log(sum);
+
+/*  Optimized code */
+let num6 = Number(prompt("Enter the number : "));
+if (Number.isInteger(num6) && num6 > 0) {
+  const evenNum = Math.floor(num6 / 2);
+  const sumOfEven = evenNum * (evenNum + 1);
+  console.log(sumOfEven);
+} else {
+  console.log("Invalid input");
+}
