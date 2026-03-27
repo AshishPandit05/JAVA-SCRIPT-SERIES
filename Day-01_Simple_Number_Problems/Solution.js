@@ -51,3 +51,11 @@ if (x >= 0) {
 } else {
   console.log("ERROR");
 }
+
+// 5. Product (Factorial) of N
+let num4 = +prompt("Enter the number : ");
+let fact = 1;
+for (let i = 1; i <= num4; i++) {
+  fact *= i;
+}
+console.log(fact);
