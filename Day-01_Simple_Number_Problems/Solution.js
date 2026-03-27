@@ -77,3 +77,13 @@ if (Number.isInteger(num6) && num6 > 0) {
 } else {
   console.log("Invalid input");
 }
+
+// 7. Print Squares of Numbers from 1 to N
+const num7 = Number(prompt("Enter the number : "));
+if (Number.isInteger(num7)) {
+  for (let i = 1; i <= num7; i++) {
+    console.log(i * i);
+  }
+} else {
+  console.log("Invalid input");
+}
